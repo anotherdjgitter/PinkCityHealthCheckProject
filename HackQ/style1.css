@@ -1,0 +1,100 @@
+#A {
+    width: 100px;
+    height :60px;
+    position: sticky;
+    
+
+}
+.nav-link{
+     
+    display:inline;
+    color:rgb(63, 58, 58);
+    position: sticky;
+    margin-top: 10px;
+
+
+}
+
+.box{
+    text-align: center;
+    padding: 200px 200px 300px;
+    height: 60px;
+    position: relative;
+    top:auto;
+    background-image : url(bg.png);
+    filter: brightness(100%);
+    display: block;
+    
+}
+.container-1{
+    box-sizing: border-box;
+    border-radius: 700px;
+    display: inline-flex;
+    align-items: center;
+}
+.bg-light{
+    height: 90px;
+    padding: 0px 0px;
+    margin-top: 10px;
+    
+}
+.nav-item{
+    padding: 20px 3px ;
+    position: relative;
+    top:-40px;
+}
+.h{
+    position: relative;
+    margin-top: 10px;
+    margin-left:10px ;
+    color: white;
+    font-size: xx-large;
+}
+.city{
+    margin-bottom: 30px;
+    padding:90px;
+}
+.d{
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 0px gainsboro;
+    height: 170px;
+    margin-left: 130px;
+    padding: -10px 10px 10px;
+    margin-bottom: 10px;
+
+
+}
+.al{
+    display: flex;
+    
+
+}
+.bl{
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    color: white;
+    
+}
+.dl{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px 30px ;
+}
+.c{
+    margin-bottom: 50px;
+}
+.navigation{
+    padding: 0px 0px 0px;
+    margin-top: 0%;
+}
+.profile{
+    margin-left: 190px;
+    margin-top: 100px;
+}
+.S{
+    height: 180px;
+    margin-left:190px ;
+    font-size: 70px;
+}

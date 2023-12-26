@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortis Hospital | PinkCityHealthCheck</title>
+
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/bootstrap.min.css" rel="stylesheet">
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/all.css" rel="stylesheet">
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/css2.css" rel="stylesheet">
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/common.css" rel="stylesheet">
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/property_detail.css" rel="stylesheet">
+    <link href="Fortis%20Hospital%20PinkCityHealthCheck_files/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header sticky-top">
+
+        <nav class=" bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/home_page.html">
+                    <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/logo.jpg" height="70px">
+                </a>
+                <ul class="navbar">
+                  <li><a href="http://127.0.0.1:5500/home_page.html" class="active">Home</a></li>
+                  <li><a href="http://127.0.0.1:5500/home_page.html">Services</a></li>
+                  <li><a href="#">Enquiry</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul></div>
+                <div class="navbar justify-content-end" style="margin: auto;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a clas="nav-link" href="#" data-toggle="modal" data-target="#signup-modal">
+                                <i style="font-size:24px" class="fa"></i>signup
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">
+                                <i style="font-size:24px" class="fa"></i>Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- <div class="header sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="home_page.html">
+                <img src="logo.jpg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signup-modal">
+                            <i class="fas fa-user"></i>Signup
+                        </a>
+                    </li>
+                    <div class="nav-vl"></div>
+                    <i style="font-size:24px" class="fa">&#xf007;</i>
+                </ul>
+            </div>
+        </nav>
+    </div> -->
+
+    <div id="loading">
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb py-2">
+            <li class="breadcrumb-item">
+                <a href="http://127.0.0.1:5500/index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="http://127.0.0.1:5500/property_list.html">Jaipur</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Fortis Hospital
+            </li>
+        </ol>
+    </nav>
+
+    <div id="property-images" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#property-images" data-slide-to="0" class=""></li>
+            <li data-target="#property-images" data-slide-to="1" class=""></li>
+            <li data-target="#property-images" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Fortis%20Hospital%20PinkCityHealthCheck_files/lab1.jpg" alt="slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Fortis%20Hospital%20PinkCityHealthCheck_files/lab2.jpg" alt="slide">
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Fortis%20Hospital%20PinkCityHealthCheck_files/lab3.jpg" alt="slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#property-images" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#property-images" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="property-summary page-container">
+        <div class="row no-gutters justify-content-between">
+            <div class="star-container" title="4.8">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="interested-container">
+                <i class="is-interested-image far fa-heart"></i>
+                <div class="interested-text">
+                    <span class="interested-user-count">6</span> interested
+                </div>
+            </div>
+        </div>
+        <div class="detail-container">
+            <div class="property-name">Fortis Hospital</div>
+            <div class="property-address">Jln marg, Jaipur, Rajasthan - 302033</div>
+            <div class="property-gender">
+                <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/unisex.png">
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="rent-container col-6">
+                <div class="rent">Rs 8,000/-</div>
+                <div class="rent-unit"></div>
+            </div>
+            <div class="button-container col-6">
+                <a href="http://127.0.0.1:5500/appoint.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="property-amenities">
+        <div class="page-container">
+            <h1>Other facilities</h1>
+            <div class="row justify-content-between">
+                <div class="col-md-auto">
+                    <h5></h5>
+                    <div class="amenity-container">
+                        <i style="font-size:24px" class="fa"></i>
+                        <span>Ambulance</span>
+                    </div>
+                    <div class="amenity-container">
+                        <i style="font-size:24px" class="fa"></i>
+                        <span>Cardiology</span>
+                    </div>
+                </div>
+
+                <div class="col-md-auto">
+                    <h5>Common Area</h5>
+                    <div class="amenity-container">
+                        <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/wifi.svg">
+                        <span>Wifi</span>
+                    </div>
+                    <div class="amenity-container">
+                        <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/tv.svg">
+                        <span>TV Rooms</span>
+                    </div>
+                    <div class="amenity-container">
+                        <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/rowater.svg">
+                        <span>Water Purifier</span>
+                    </div>
+                    <div class="amenity-container">
+                        <i style="font-size:24px" class="fa"></i>
+                        <span>Cafeteria</span>
+                    </div>
+                    <div class="amenity-container">
+                        <i style="font-size:24px" class="fa"></i>
+                        <span>Wheelchair</span>
+                    </div>
+                </div>
+
+                <div class="col-md-auto">
+                    <h5>Bedroom</h5>
+                    <div class="amenity-container">
+                        <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/bed.svg">
+                        <span>Bed with Matress</span>
+                    </div>
+                    <div class="amenity-container">
+                        <i style="font-size:24px" class="fa"></i>
+                        <span>Personel nurse </span>
+                    </div>
+                </div>
+
+                <div class="col-md-auto">
+                    <h5>Washroom</h5>
+                    <div class="amenity-container">
+                        <img src="Fortis%20Hospital%20PinkCityHealthCheck_files/geyser.svg">
+                        <span>Geyser</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="property-about page-container">
+        <h1>About the Hospital</h1>
+        <p>Fortis Escorts Hospital, Jaipur is the 275 bedded, first NABH
+ accredited multisuper speciality hospital at Rajasthan. This hospital 
+has established itself as one of the best tertiary care hospitals in the
+ region. In last 14 years, Fortis Escorts Hospital, Jaipur has 
+successfully managed to develop world class facilities.
+
+            Fortis Jaipur is a pioneer in high-end procedures like 
+Kidney Transplant, Laser Surgery, High End Urology Procedures, Total 
+Knee &amp; Hip Replacement with Robotics &amp; Computer Navigation, 
+Adult and Paediatric Cardiac Surgery including Congenital Heart 
+Diseases, Rajasthan’s First Next Generation Cathlab for Cardiac 
+Procedures, Comprehensive &amp; advance Cardiac Care, , Complex Neuro 
+Intervention Procedures, minimally invasive, usingcomputer Navigation, B</p>
+    </div>
+
+    <div class="property-rating">
+        <div class="page-container">
+            <h1>Hospital Rating</h1>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <div class="rating-criteria row">
+                        <div class="col-6">
+                            <i class="rating-criteria-icon fas fa-broom"></i>
+                            <span class="rating-criteria-text">Cleanliness</span>
+                        </div>
+                        <div class="rating-criteria-star-container col-6" title="4.3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="rating-criteria row">
+                        <div class="col-6">
+                            <i style="font-size:24px" class="fa"></i>
+                            <span class="rating-criteria-text">Assistance</span>
+                        </div>
+                        <div class="rating-criteria-star-container col-6" title="3.4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="rating-criteria row">
+                        <div class="col-6">
+                            <i class="rating-criteria-icon fa fa-lock"></i>
+                            <span class="rating-criteria-text">Safety</span>
+                        </div>
+                        <div class="rating-criteria-star-container col-6" title="4.8">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="rating-circle">
+                        <div class="total-rating">4.2</div>
+                        <div class="rating-circle-star-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="property-testimonials page-container">
+        <h1>What people say</h1>
+        <div class="testimonial-block">
+            <div class="testimonial-image-container">
+                <img class="testimonial-img" src="Fortis%20Hospital%20PinkCityHealthCheck_files/man.png">
+            </div>
+            <div class="testimonial-text">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>You just have to arrive at the place, it's fully 
+furnished and stocked with all basic amenities and services and even 
+your friends are welcome.</p>
+            </div>
+            <div class="testimonial-name">- Ashutosh Gowariker</div>
+        </div>
+        <div class="testimonial-block">
+            <div class="testimonial-image-container">
+                <img class="testimonial-img" src="Fortis%20Hospital%20PinkCityHealthCheck_files/man.png">
+            </div>
+            <div class="testimonial-text">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>You just have to arrive at the place, it's fully 
+furnished and stocked with all basic amenities and services and even 
+your friends are welcome.</p>
+            </div>
+            <div class="testimonial-name">- Karan Johar</div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-heading" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signup-heading">Signup with PGLife</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="signup-form" class="form" role="form">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="full_name" placeholder="Full Name" maxlength="30" required="">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required="">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required="">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-university"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="college_name" placeholder="College Name" maxlength="150" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <span>I'm a</span>
+                            <input type="radio" class="ml-3" id="gender-male" name="gender" value="male"> Male
+                            <label for="gender-male">
+                            </label>
+                            <input type="radio" class="ml-3" id="gender-female" name="gender" value="female">
+                            <label for="gender-female">
+                                Female
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-primary">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <span>Already have an account?
+                        <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-heading" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="login-heading">Login with PGLife</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="login-form" class="form" role="form">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <span>
+                        <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup-modal">Click here</a>
+                        to register a new account
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="page-container footer-container">
+            <div class="footer-cities">
+                <div class="footer-city">
+                    <a href="http://127.0.0.1:5500/property_list.html">Cancer</a>
+                </div>
+                <div class="footer-city">
+                    <a href="http://127.0.0.1:5500/property_list.html">Neuro</a>
+                </div>
+                <div class="footer-city">
+                    <a href="http://127.0.0.1:5500/property_list.html">Arthritis</a>
+                </div>
+                <div class="footer-city">
+                    <a href="http://127.0.0.1:5500/property_list.html">Diabetes</a>
+                </div>
+            </div>
+            <div class="footer-copyright">© 2023 Copyright PinkCityHealthCheck </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Fortis%20Hospital%20PinkCityHealthCheck_files/jquery.js"></script>
+    <script type="text/javascript" src="Fortis%20Hospital%20PinkCityHealthCheck_files/bootstrap.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>

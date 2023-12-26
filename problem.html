@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link href="css/stylehack.css" rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="nav-wrapper">
+        <nav id="nav" class="bg-light">
+            <div class=" nav left ">
+                <span class="gradient skew "><h1 class="logo un-skew "><a href="#home "><img src="Blogger-logo.jpg " height="50px " class="b "/></a></h1></span>
+                <button id="menu " class="btn-nav "><span class="fas fa-bars "></span></button>
+            </div>
+            <div class="nav right ">
+                <a href="#home " class="nav-link active "><span class="nav-link-span "><span class="u-nav "><i style="font-size:24px" class="fa">&#xf015;</i>Home</span></span></a>
+                <a clas="nav-link" href="#" data-toggle="modal" data-target="#signup-modal">
+                    <i style="font-size:24px" class="fa">&#xf007;</i>signup
+                </a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">
+                    <i style="font-size:24px" class="fa">&#xf090;</i>Login
+                </a>
+                <a href="#contact " class="nav-link "><span class="nav-link-span "><span class="u-nav "><i style="font-size:24px" class="fa">&#xf2ba;</i>Contact</span></span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home ">
+
+        </section>
+        <section id="about ">
+
+        </section>
+        <section id="work ">
+
+        </section>
+        <section id="contact ">
+
+        </section>
+    </main>
+    </div>
+
+    <div class="bg">
+    </div>
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-heading" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signup-heading">Signup with PGLife</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                </div>
+
+                <div class="modal-body">
+                    <form id="signup-form" class="form" role="form">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                  <i class="fa fa-user"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" name="full_name" placeholder="Full Name" maxlength="30" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend" style="width:30px;height:30px;">
+                                <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                            </span>
+                            </div>
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                  <i class="fa fa-lock"></i>
+                              </span>
+                            </div>
+                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                  <i class="fa fa-university"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" name="college_name" placeholder="College Name" maxlength="150" required>
+                        </div>
+
+                        <div class="form-group">
+                            <span>I'm a</span>
+                            <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> Male
+                            <label for="gender-male">
+                          </label>
+                            <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
+                            <label for="gender-female">
+                              Female
+                          </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-primary">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <span>Already have an account?
+                      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-heading" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signup-heading">Login with PGLife</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <span class="input-group-text">
+              <i style="font-size:24px" class="fa">&#xf045;</i>
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+              </span>
+                </div>
+                <div class="modal-body">
+                    <span class="input-group-text">
+                <i style='font-size:24px' class="fa fa-user"></i>
+                <input type="password" class="form-control" name="password" placeholder="password"  required>
+              </span>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h5>Dont have a account<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup-modal">signup</a></h5>
+                </div>
+
+                <script type="text/javascript" src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
